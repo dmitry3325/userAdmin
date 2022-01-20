@@ -1,4 +1,16 @@
 {
+  "sign_in.title": "Sign In",
+  "sign_up.title": "Sign Up",
+  "account_number.label": "SSN:",
+  "account_number.placeholder": "Please input your account number",
+  "account_number.hint": "Norwegian account number should contain 11 digits",
+  "account_name.label": "Name:",
+  "account_name.placeholder": "You account name",
+  "account_currency.label": "Currency:",
+  "account_currency.placeholder": "Pick currency. Type to search...",
+  "account_type.label": "Choose account type:",
+  "account_type.placeholder": "Pick type from the list",
+  "users_list.title": "Users list",
   "not_found.title": "Page not found",
   "not_found.text": "Some contact info or else"
 }

@@ -1,0 +1,75 @@
+@forward '~element-plus/theme-chalk/src/common/var.scss' with (
+  $font-size: (
+    'extra-large': 1.5rem,
+    'large': 1.2rem,
+    'medium': 1rem,
+    'base': 1rem,
+    'small': 0.8rem,
+    'extra-small': 0.6rem,
+  )
+);
+
+/**
+* Base theme
+*/
+@import '~element-plus/theme-chalk/src/index.scss';
+@import './spacer.scss';
+
+body {
+  font-family: "Open Sans", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  bottom: 0 !important;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.rounded-card {
+  border-radius: 1.2em;
+  border: 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.el-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  text-align: left;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  padding: 2% 4%;
+  margin-bottom: 1.5rem;
+  border-radius: 1.2rem;
+  border: 0;
+}
+
+a {
+  color: RGB(var(--theme-primary));
+}
+
+.font-weight-bold {
+  font-weight: 700!important;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.sub-title {
+  font-size: 0.7rem;
+  color: gray;
+}
