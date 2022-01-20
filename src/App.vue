@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <el-row>
+    <el-col class="m-auto" :xs="24" :sm="18" :md="14" :xl="10">
+      <router-view />
+    </el-col>
+  </el-row>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { defineComponent, PropType } from 'vue';
 
-export default {
+export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  mounted() {
+    console.log('test', this.$router, this.$store);
+  },
+});
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import 'src/assets/scss/main.scss';
 </style>
