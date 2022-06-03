@@ -33,6 +33,7 @@ least 6 hours before the second interview.
 • Be easy for us to check out and get up and running locally
 • Include a test
 • Code should be clean and readable, with written documentation if needed```
+```
 
 ## Project setup
 ```
